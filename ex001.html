@@ -1,84 +1,27 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ex - 01</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-
-    <style>
-        .calculadora{
-            color: white;
-            margin-top: 40px;
-            border: 1px solid #000;
-            padding: 20px;
-            background-color: #2e2e2e;
-            border-radius: 10px;
-            box-shadow: 1px 1px 5px #000;
-        }
-        .btn{
-            width: 60px;
-            height: 52px;
-            margin: 5px;
-            box-shadow: 1px 1px 1px #000;
-        }
-        .zero{
-            width: 130px;
-        }
-        .zero:hover{
-            background-color: rgb(66, 62, 57);
-            color: #fff;
-        }
-        .resultado{
-            text-align: left;
-            font-size: 20px;
-            margin-top: 10px;
-            margin-bottom: 20px;
-            bottom: 1px solid #000;
-            box-shadow: 1px 1px 1px #000;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="assets/estilo.css"/>
 </head>
-<body style="background: #d9d9d9;">
-    <div class="container">
-        <div class="row">
-            <div class="col d-flex justify-content-center">
-                <div class="calculadora">
-                    <h1>Lista de exercícios</h1>
-                    <h3>1. Escreva um programa em JavaScript que exiba na tela o maior número
-                    entre dois números fornecidos pelo usuário.</h3>
-            
-                    <form class="calculadora">
-                        <label for="numero1">Digite um número:</label><br>
-                        <input type="number" id="n1" name="n1"><br>
-                        <label for="numero2">Digite um outro número:</label><br>
-                        <input type="number" id="n2" name="n2"><br><br>
-                        <button onclick="maior()" type="button" class="btn btn-lg zero">Calcular</button><br><br>
-                    </form> 
-            
-                    <input type="text" id="resultado" class="form-control resultado" placeholder="0" disabled="disabled"/>
-                </div>
-            </div>
+<body>
+    <header>
+        <h1>Lista de Exercícios - JS</h1>
+        <h4>1. Escreva um programa em JavaScript que exiba na tela o maior número
+            entre dois números fornecidos pelo usuário.</h4>
+    </header>
+    <section>
+        <div>
+
         </div>
-    </div>
+        <div>
 
-    
-    <script>
-        function maior(n1, n2){
-            var n1 = document.getElementById('n1').value
-            var n2 = document.getElementById('n2').value
-
-            if(n1>n2){
-                document.getElementById('resultado').value = 'O número '+n1 + ' é maior que '+n2
-            }
-            else if(n2>n1){
-                document.getElementById('resultado').value = 'O número '+n2 + ' é maior que '+n1
-            }
-            else if(n1==n2){
-                document.getElementById('resultado').value = 'Os números são iguais'
-            }
-        }
-         
-    </script>
+        </div>
+    </section>
+    <footer>
+        <p>Milena Rickli Silvério</p>
+    </footer>
 </body>
 </html>
