@@ -29,12 +29,13 @@
     <script>
         function fatorial(num) {
               var num = document.getElementById("n").value;
-                 if (num === 0 || num === 1)
-                       return 1;
-                for (var i = num - 1; i >= 1; i--) {
-                       num *= i;
+                if (num == 0 || num == 1){
+                    document.getElementById("resultado").innerHTML = 'O fatorial é 1'; 
                 }
-               return document.getElementById("resultado").innerHTML = 'O fatorial é '+num;
+                    for (var i = num - 1; i >= 1; i--) {
+                        num *= i;
+                    }
+                    document.getElementById("resultado").innerHTML = 'O fatorial é '+num;
            }
     </script>
 </body>
