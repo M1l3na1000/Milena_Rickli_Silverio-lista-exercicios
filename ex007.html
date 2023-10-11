@@ -3,25 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ex - 01</title>
+    <title>Ex - 07</title>
     <link rel="stylesheet" type="text/css" href="assets/estilo.css"/>
 </head>
 <body>
     <header>
         <h1>Lista de Exercícios - JS</h1>
-        <h4>1. Escreva um programa em JavaScript que exiba na tela o maior número
-            entre dois números fornecidos pelo usuário.</h4>
+        <h4>7. Escreva um programa em JavaScript que exiba na tela o fatorial de um
+            número fornecido pelo usuário.</h4>
     </header>
     <section>
         <div>
-
+            <label for="n">Escreva variável: </label>
+            <input id="n" type="number" ><br><br>
+            <button onclick="fatorial(n)">Fatorial</button>
+            <p></p>
+    
         </div>
-        <div>
-
-        </div>
+        <div id="resultado"></div>
     </section>
     <footer>
         <p>Milena Rickli Silvério</p>
     </footer>
+
+    <script>
+        function fatorial(num) {
+              var num = document.getElementById("n").value;
+                 if (num === 0 || num === 1)
+                       return 1;
+                for (var i = num - 1; i >= 1; i--) {
+                       num *= i;
+                }
+               return document.getElementById("resultado").innerHTML = 'O fatorial é '+num;
+           }
+    </script>
 </body>
 </html>

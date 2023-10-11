@@ -3,25 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ex - 01</title>
+    <title>Ex - 03</title>
     <link rel="stylesheet" type="text/css" href="assets/estilo.css"/>
 </head>
 <body>
     <header>
         <h1>Lista de Exercícios - JS</h1>
-        <h4>1. Escreva um programa em JavaScript que exiba na tela o maior número
-            entre dois números fornecidos pelo usuário.</h4>
+        <h4>3. Escreva um programa em JavaScript que exiba na tela uma mensagem
+            de acordo com a nota do usuário. Se a nota for menor do que 6, exiba
+            "Reprovado". Se a nota for maior ou igual a 6 e menor do que 8, exiba
+            "Aprovado". Se a nota for maior ou igual a 8, exiba "Aprovado com louvor".</h4>
     </header>
     <section>
         <div>
-
+            <label for="nota">Insira nota do aluno:</label>
+            <input id="nota" type="number" ><br><br>
+            <button onclick="calcular()">Verificar</button>
+            <p></p>            
         </div>
-        <div>
-
-        </div>
+        <div id="resultado"></div>
     </section>
     <footer>
         <p>Milena Rickli Silvério</p>
     </footer>
+
+    <script>
+         function calcular() {
+            var nota = document.getElementById("nota").value;
+
+            if(nota<0){
+                document.getElementById("resultado").innerHTML = 'Verique dados - Erro';
+            }else if(nota<6){
+                document.getElementById("resultado").innerHTML = 'Reprovado';
+
+            }else if(nota>=6 && nota<8){
+                document.getElementById("resultado").innerHTML = 'Aprovado'
+            }else if(nota>=8 && nota<=10){
+                document.getElementById("resultado").innerHTML = 'Aprovado com louvor'
+            }else if(nota>10){
+                 document.getElementById("resultado").innerHTML = 'Error'
+            }
+        }
+    </script>
 </body>
 </html>

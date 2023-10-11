@@ -3,25 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ex - 01</title>
+    <title>Ex - 05</title>
     <link rel="stylesheet" type="text/css" href="assets/estilo.css"/>
 </head>
 <body>
     <header>
         <h1>Lista de Exercícios - JS</h1>
-        <h4>1. Escreva um programa em JavaScript que exiba na tela o maior número
-            entre dois números fornecidos pelo usuário.</h4>
+        <h4>5. Escreva um programa em JavaScript que exiba na tela uma mensagem
+            de acordo com o valor de uma variável. Se a variável for igual a "a", exiba
+            "A". Se a variável for igual a "b", exiba "B". Se a variável não for nem "a"
+            nem "b", exiba "Outra letra".</h4>
     </header>
     <section>
         <div>
-
+            <label for="variavel">Insira variável:</label>
+            <input id="variavel" type="text" ><br><br>
+            <button onclick="calcular()">Verificar</button>
+            <p></p> 
         </div>
-        <div>
-
-        </div>
+        <div id="resultado"></div>
     </section>
     <footer>
         <p>Milena Rickli Silvério</p>
     </footer>
+
+    <script>
+        function calcular(){
+            var opcao = document.getElementById("variavel").value;
+            switch (opcao) {
+                case 'a':
+                case 'A':
+                    document.getElementById("resultado").innerHTML = 'A';
+                    break;
+                case 'b':
+                case 'B':
+                    document.getElementById("resultado").innerHTML = 'B';
+                    break;
+                default:
+                    document.getElementById("resultado").innerHTML = 'OUTRA LETRA';
+            }
+        }
+        
+    </script>
 </body>
 </html>

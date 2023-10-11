@@ -3,25 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ex - 01</title>
+    <title>Ex - 10</title>
     <link rel="stylesheet" type="text/css" href="assets/estilo.css"/>
 </head>
 <body>
     <header>
         <h1>Lista de Exercícios - JS</h1>
-        <h4>1. Escreva um programa em JavaScript que exiba na tela o maior número
-            entre dois números fornecidos pelo usuário.</h4>
+        <h4>10. Escreva um programa em JavaScript que exiba na tela a média dos
+            elementos de uma matriz.</h4>
     </header>
     <section>
         <div>
-
+            <label for="vetor">Matriz: [
+                [1,2,3]
+                [4,5,6]
+                [7,8,9]
+            ] 
+        </label><br><br>
+        <button onclick="calcular()">Verificar</button>
+        <p></p>
         </div>
-        <div>
-
-        </div>
+        <div id="resultado"></div>
     </section>
     <footer>
         <p>Milena Rickli Silvério</p>
     </footer>
+
+    <script>
+        function calcular(){
+            const numeros = [1,2,3,4,5,6,7,8,9];
+            let soma = 0;
+            for (let i = 0; i < numeros.length; i++) {
+                soma += numeros[i];
+            }
+            const media = soma / numeros.length;
+
+            document.getElementById("resultado").innerHTML = 'A média da matriz é '+media;
+        }
+    </script>
 </body>
 </html>

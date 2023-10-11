@@ -17,8 +17,27 @@ section{
 div{
     text-align: center;
 }
+button{
+    background-color: white;
+    border-radius: 12px;
+    padding: 5px;
+    width: 90px;
+    margin: auto;
+    box-shadow: 2px 2px 4px rgb(46, 45, 45);
+}
+button:hover{
+    background-color: rgb(107, 107, 241);
+}
 footer{
     color: white;
     text-align: center;
     font-style: italic;
+}
+.resultado{
+    text-align: right;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    bottom: 1px solid #000;
+    box-shadow: 1px 1px 1px #000;
 }
