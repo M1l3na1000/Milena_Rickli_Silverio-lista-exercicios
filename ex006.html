@@ -31,13 +31,16 @@
 
     <script>
         function calcular(){
-            const numeros = [1,2,3,4,5,6,7,8,9];
+            const numeros = [[1,2,3],[4,5,6],[7,8,9]];
             let soma = 0;
-            for (let i = 0; i < numeros.length; i++) {
-                soma += numeros[i];
+            for(let i=0; i< 3; i++){
+                for (let i = 0; i < 3; i++) {
+                soma += numeros[i][i];
+            }
             }
 
             document.getElementById("resultado").innerHTML = 'A soma é '+soma;
+            
         }
     </script>
 </body>
